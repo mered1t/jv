@@ -5,12 +5,13 @@ import java.util.stream.IntStream;
 
 public class ElementsConcatenate {
 
-    public int[] concatIntoStream(int[][] arr){
+    public String concatIntoStream(int[][] arr){
 
         IntStream stream = IntStream.concat(Arrays.stream(arr[0]), Arrays.stream(arr[1])).sorted();
 
-        int[] result = stream.toArray();
+        int[] concatenated = stream.toArray();
+        String result = Arrays.toString(concatenated);
 
-        return result;
+        return result.substring(1, result.indexOf(']'));
     }
 }

@@ -8,9 +8,9 @@ public class Main {
 		int[][] arr = new int[][]{{1,2,0},{4,5}};
 		ElementsConcatenate elementsConcatenator = new ElementsConcatenate();
 
-		int[] result = elementsConcatenator.concatIntoStream(arr);
+		String result = elementsConcatenator.concatIntoStream(arr);
 
 		System.out.println("Array: " + Arrays.deepToString(arr));
-		System.out.println("Changed array: " + Arrays.toString(result));
+		System.out.println("Changed array: " + result);
 	}
 }
